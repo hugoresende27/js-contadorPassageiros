@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&display=swap');
+
+/*CORES
+/* Color Theme Swatches in Hex */
+.color-theme_bus-1-hex { color: #0511F2; }
+.color-theme_bus-2-hex { color: #040DBF; }
+.color-theme_bus-3-hex { color: #030A8C; }
+.color-theme_bus-4-hex { color: #F28705; }
+.color-theme_bus-5-hex { color: #8C3503; }
+
+
+
 body
 {
-    font-family: 'Mochiy ',sans-serif;
+    font-family: 'Mochiy Pop ',sans-serif;
     background-image: url("./img/bus.jpg");
     background-size: cover;
     height: 100vh;/*para esticar vertical*/
@@ -24,6 +35,7 @@ body
     text-align: center;
     border-radius: 20px;
     padding: 10px;
+    max-width: 60%;
 }
 
 h1{
@@ -40,6 +52,13 @@ h2{
     border-radius: 50px;
     padding: 10px;
     color: #fff;
+    float: left;
+    
+}
+
+h2#contadorTotal{
+   
+    float:right;
 }
 
 button{
@@ -50,16 +69,30 @@ button{
     padding: 10px;
     cursor: pointer;
     width: 150px;
+    margin: 5px;
 }
 
 #adicionarBtn{
-    background: darkred;
+    background: #0511F2;
 }
-#adicionarBtn:hover{
-    background: darkgreen;
+#mostrarBtn{
+    background: #030A8C;
 }
-#guardarBtn{
-    background: darkgreen;
+#resetBtn{
+    background:#8C3503;
+}
+#adicionarBtn:hover, #mostrarBtn:hover, #resetBtn:hover{
+    background: #F28705;
+}
+
+
+ul{
+    list-style-type: none;
+    padding-left: 0;/*PARA CENTRAR AO CENTRO, DE OUTRO MODO BOTÕES FICAVAM COM O ESPACO DOS * DA LISTA*/
+}
+p{
+    font-family: Impact, sans-serif;
+    font-size: 20pt;
 }
 
 @media(max-width: 480px)        /*para ecras mais pequenos*/
@@ -71,5 +104,8 @@ button{
     h1 
     {
         font-size: 12px;
+    }
+    p{
+        font-size: 10pt;
     }
 }

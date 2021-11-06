@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-
-    <div id="main">
-        <h1>Pessoas que entraram</h1>
-        <h2 id="contador">0</h2>
-        <button id="adicionarBtn" onclick="adicionar()" onmouseover="mudaCor()" onmouseleave="mudaCor2()">ADICIONAR</button>
-    </div>
+ <div id="main">
+    <h1>Pessoas que entraram</h1>
+    <h2 id="contador">0</h2>
+    <!-- <p style="color: red ">TOTAL DE PASSAGEIROS</p> -->
+    <h2 id="contadorTotal">0</h2>
+    <ul>
+        <li>
+            <button id="adicionarBtn" onclick="adicionar()" onmouseover="mudaCor()" onmouseleave="mudaCor2()">ADICIONAR</button>
+        </li>
+        <li>
+            <button id="mostrarBtn" onclick="final()" >FINALIZAR</button>
+        </li>
+        <li>
+            <button id="resetBtn" onclick="reset()" >RESET</button>
+        </li>
+    </ul>
+    <p id="mostra"></p>
+ </div>
 </body>
 <script src="script.js"></script>
 </html>
