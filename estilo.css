@@ -1,0 +1,24 @@
+body
+{
+    background-image: url("./img/bus.jpg");
+    background-size: cover;
+    height: 100vh;/*para esticar vertical*/
+
+    /*PARA CENTRAR CONTEUDO NO MEIO */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*PARA CENTRAR CONTEUDO NO MEIO */
+  
+}
+
+#main
+{
+   /* background-image:linear-gradient(90deg, #bebacc, #474550);*/
+    background-image: url("./img/bus2.png");
+    background-size: contain;
+    background-position: 100%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+}
